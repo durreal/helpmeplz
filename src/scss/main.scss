@@ -1,0 +1,43 @@
+// ==== 1. Utils ====
+@import 'utils/variables'; // Используем @import, а не @use
+
+// ==== 2. Base styles ====
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/layout';
+
+// ==== 3. Layout ====
+@import 'layout/container';
+
+// ==== 4. Components ====
+@import 'components/button';
+@import 'components/card';
+@import 'components/header';
+@import 'components/block1';
+@import 'components/block2';
+@import 'components/block3';
+@import 'components/block4';
+@import 'components/block5';
+@import 'components/footer';
+@import 'components/preview';
+@import 'components/filters';
+@import 'components/block21';
+@import 'components/pages';
+@import 'components/supreme';
+@import 'components/carttotals';
+@import 'components/bildet';
+@import 'components/cont';
+@import 'components/block31';
+@import 'components/prodsofa';
+@import 'components/comprow';
+@import 'components/comparision';
+@import 'components/blbase';
+
+html{
+  overflow-x: hidden;
+}
+
+body {
+  transition: all 0.3s ease;
+  overflow-x: hidden;
+}

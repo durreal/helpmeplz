@@ -1,0 +1,108 @@
+.card_outside {
+  position: relative;
+}
+
+.card {
+  width: 17.8rem;
+  height: 27.8rem;
+  background-color: var(--light_grey);
+  margin-top: -4.5rem;
+  position: relative;
+
+  &__body {
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  &__title {
+    font-size: 1.5rem;
+  }
+
+  &__discount {
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--red);
+  border-radius: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin-top: -3rem;
+  z-index: 3;
+  margin-left: 13.4rem;
+  top: 4rem;
+  right: 1rem;
+  &:empty {
+    display: none;
+  }
+  }
+  &:hover {
+    .card__discount,
+    .card__discount1 {
+      filter: brightness(0.6);
+    }
+  }
+
+  &__discount1 {
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--blue);
+  border-radius: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin-top: -3rem;
+  z-index: 3;
+  margin-left: 13.4rem;
+  top: 4rem;
+  right: 1rem;
+  &:empty {
+    display: none;
+  }
+}
+
+  .card_sale {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.3rem;
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 2;
+  }
+
+  &:hover &__overlay {
+    opacity: 1;
+  }
+
+  &__btn-cart {
+    border: none;
+    padding: 0.625rem 1.25rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 12.6rem;
+    height: 3rem;
+  }
+
+  &__actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    color: var(--light_grey);
+  }
+}

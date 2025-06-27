@@ -1,0 +1,140 @@
+footer{
+    width: 120rem;
+    margin-top: 2rem;
+}
+.f_line_up {
+    border: none; 
+    height: 0.125rem;
+    background: #d9d9d99f;
+    margin: 1.25rem auto;
+    width: 95%;
+}
+.f_line_down {
+    border: none; 
+    height: 0.125rem;
+    background: #d9d9d99f;
+    width: 80%;
+    margin: 1.25rem auto;
+}
+.st{
+    line-height: 4rem;
+    color: var(--black);
+}
+.f_left_desc{
+    margin-top: 3rem
+}
+.finf{
+    width: 17.8rem;
+    margin-right: 8rem;
+}
+.f_left{
+    display: flex;
+    gap: 9.375rem;
+    margin-left: -4rem;
+}
+.f_verh{
+    display: flex;
+    justify-content: center;
+    padding-top: 1.875rem;
+    gap: 14rem;
+}
+.f_right{
+    display: flex;
+    gap: 10rem
+}
+#mail1{
+    width: 12.5rem;
+    height: 1.3rem;
+    border-style: none;
+    border-bottom: 0.125rem solid black;
+    background-color: transparent;
+
+}
+.f_mail{
+    display: flex;
+    margin-top: 1rem;
+}
+.f_but{
+    font-family: "pop";
+    font-size: 1rem;
+    display: flex;
+    width: 5.4rem;
+    height: 1.3rem;
+    background-color: transparent;
+    border: none; 
+    border-bottom: 0.125rem solid black;
+    margin-top: 0.3rem;
+    margin-left: 1rem;
+    justify-content: center;
+    align-items: center;  
+    color: var(--black);
+}
+.f_niz{
+    margin-left: 12rem;
+    line-height: 4rem;
+}
+
+@media (max-width: 480px) {
+  footer {
+    width: 100%;
+    padding: 0 1rem;
+    margin-left: -1.3rem;
+  }
+
+  .f_verh {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding-top: 1rem;
+  }
+
+  .f_left {
+    margin-left: 0;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .finf {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .f_left_desc {
+    margin-top: 1.5rem;
+  }
+
+  .f_right {
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+  }
+
+  .st {
+    text-align: center;
+    line-height: 2.2rem;
+  }
+
+  .f_mail {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  #mail1 {
+    width: 100%;
+    max-width: 16rem;
+    text-align: center;
+  }
+
+  .f_but {
+    width: 8rem;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .f_niz {
+    margin-left: 0;
+    text-align: center;
+    padding-bottom: 1.5rem;
+  }
+}

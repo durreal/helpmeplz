@@ -1,0 +1,41 @@
+.pages{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    gap: 2.5rem;
+    .pages_active{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 3.75rem;
+        height: 3.75rem;
+        color: var(--white);
+        background-color: var(--orange);
+        border-radius: 0.6rem
+    }
+    .pages_other{
+        display: flex;
+        width: 3.75rem;
+        height: 3.75rem;
+        background-color: var(--yellow);
+        border-radius: 0.6rem;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .pages{
+        margin-top: 2rem;
+        gap: 1rem;
+            .pages_active{
+                width: 3rem;
+                height: 3rem;
+            }
+            .pages_other{
+                width: 3rem;
+                height: 3rem;
+             }
+    }
+
+}

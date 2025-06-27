@@ -1,0 +1,146 @@
+.specification-container {
+  font-family: Arial, sans-serif;
+  color: var(--black);
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.specification-section {
+  margin-bottom: 2.5rem;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.specification-section h2 {
+  color: var(--black);
+  padding: 0.75rem 1rem;
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.specification-section table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.specification-section th,
+.specification-section td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+
+.specification-section th {
+  font-weight: 600;
+  width: 25%;
+}
+
+.mobile-models-info {
+  display: none;
+  padding: 0.75rem;
+  font-size: 0.85rem;
+}
+
+.mobile-models-info div {
+  display: flex;
+  align-items: center;
+  margin: 0.3125rem 0;
+}
+
+.adc{
+  background-color: var(--orange);
+  color: var(--white);
+  height: 3.4rem;
+  width: 14.8rem;
+  border-style: none;
+  font-size: 1rem;
+  font-family: 'semi';
+  margin-top: 2rem;
+}
+
+@media (max-width: 425px) {
+  .specification-section {
+    margin-bottom: 1.875rem;
+  }
+  
+  .specification-section h2 {
+    padding: 0.75rem 0.9375rem;
+    font-size: 1.1rem;
+  }
+  
+  .specification-section table,
+  .specification-section thead,
+  .specification-section tbody,
+  .specification-section th,
+  .specification-section td,
+  .specification-section tr {
+    display: block;
+    width: 100%;
+  }
+  
+  .specification-section table {
+    border: none;
+  }
+  
+  .specification-section tr {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 0.125rem solid #e0e0e0;
+    padding: 0.625rem 0;
+  }
+  
+  .specification-section th {
+    display: block;
+    font-weight: 700;
+    background: var(--yellow);
+    border: none;
+    padding: 0.75rem 0.9375rem;
+    width: 100%;
+    font-size: 0.85rem;
+  }
+  
+  .specification-section td {
+    display: flex;
+    align-items: flex-start;
+    border: none;
+    padding: 0.5rem 0.9375rem 0.5rem 50%;
+    position: relative;
+    min-height: 2.75rem;
+    box-sizing: border-box;
+    line-height: 1.4;
+  }
+  
+  .specification-section td:before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0.9375rem;
+    top: 0.5rem;
+    width: calc(50% - 1.25rem);
+    padding-right: 0.625rem;
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: var(--black);
+    word-break: break-word;
+  }
+  
+  .mobile-models-info {
+    display: block;
+  }
+  
+  .specification-section tr:last-child {
+    border-bottom: none;
+  }
+  
+  .specification-section [data-label*="Warranty"] {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+  
+  .specification-section [data-label*="Warranty"]:before {
+    top: 0.75rem;
+  }
+
+  .adc{
+    margin-left: -7rem;
+  }
+}

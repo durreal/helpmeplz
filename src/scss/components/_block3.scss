@@ -1,0 +1,48 @@
+.block3{
+    margin-top: 3rem;
+    .bl3_tit{
+        text-align: center;
+    }
+    .block3_cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 7.3rem;
+        margin-top: 6.5rem;
+    }
+    .but2{
+        text-align: center;
+        margin-top: 3rem;
+        color: var(--orange);
+        border-color: var(--orange);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sm{
+        color: var(--orange);
+        border-color: var(--orange);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+  .block3 {
+    .block3_card1{
+        display: none;
+    }
+    .bl3_tit{
+        font-size: 2rem;
+    }
+    .sm{
+        width: 12rem;
+        height: 3rem;
+        font-size: 1rem;
+    }
+    .but2{
+        margin-top: 1rem;
+    }
+  }
+}

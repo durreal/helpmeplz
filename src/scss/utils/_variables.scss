@@ -1,0 +1,34 @@
+:root {
+  --light_yellow: #FCF8F3;
+  --yellow: #FFF3E3;
+  --orange: #B88E2F;
+  --grey: #9F9F9F;
+  --light_grey: #F4F5F7;
+  --dark_grey: #616161;
+  --black: black;
+  --white: #FFFFFF;
+  --red: #E97171;
+  --blue: #2EC1AC;
+  --stars: #F2C94C;
+
+  --font-family-title: "semi";
+  --font-family-med: "pop";
+  --font-family-reg: "reg";
+  --font-family-light: "light";
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --light_yellow: #b19879;
+    --yellow: #a17f51;
+    --orange: #7c6122;
+    --grey: #c2c2c2;
+    --light_grey: #dadada;
+    --dark_grey: #616161;
+    --black: #ffffff;
+    --white: rgb(49, 49, 49);
+  }
+  .icon, .icons, .oblupa, .stepa {
+    color: var(--black);
+  }
+}
